@@ -1,401 +1,128 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <title>망원 셔츠룸 추천 | 망원동 상세 정보 및 가격 가이드</title>
-    <meta name="description" content="망원 셔츠룸 추천 상세 정보. 망원동 최고의 셔츠룸 가격, 서비스, 실제 이용 후기 기반 데이터. 지역 대표 업소 분석. 전화 문의: 010-6279-0862">
-    <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 추천, 망원동 셔츠룸, 망원 유흥, 셔츠룸 가격, 망원술집, 망원셔츠룸정보">
-    <link rel="canonical" href="https://t3b06-mw-shirts-rc-1.vercel.app">
-    <meta property="og:title" content="망원 셔츠룸 추천 | 망원동 최고의 셔츠룸 정보">
-    <meta property="og:description" content="망원 셔츠룸 추천 전문 정보. 망원동 지역 최고의 셔츠룸을 엄선하여 소개합니다. 합리적인 가격과 프리미엄 서비스, 실제 이용 후기 기반 추천.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b06-mw-shirts-rc-1.vercel.app">
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:site_name" content="망원 셔츠룸 추천">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="망원 셔츠룸 추천 | 망원동 최고의 셔츠룸 정보">
-    <meta name="twitter:description" content="망원 셔츠룸 추천 전문 정보. 망원동 지역 최고의 셔츠룸을 엄선하여 소개합니다.">
-    <style>
-        /* ===== BRUTALIST-AVANTGARDE 디자인 시스템 ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background: #e8e4de;
-            color: #1a1a1a;
-            line-height: 1.5;
-            padding: 0 1rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 0;
-        }
-
-        /* 헤더 + 네비게이션 */
-        .site-header {
-            border-bottom: 4px solid #1a1a1a;
-            padding: 1rem 0;
-            margin-bottom: 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .site-title a {
-            font-size: 1.8rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            text-decoration: none;
-            color: #1a1a1a;
-            border: 3px solid #1a1a1a;
-            padding: 0.2rem 0.5rem;
-            background: #f7f3ee;
-            display: inline-block;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 0.5rem;
-            list-style: none;
-            flex-wrap: wrap;
-        }
-
-        .nav-links li a {
-            display: block;
-            padding: 0.4rem 1rem;
-            border: 2px solid #1a1a1a;
-            background: #f7f3ee;
-            color: #1a1a1a;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            transition: all 0.1s ease;
-        }
-
-        .nav-links li a:hover,
-        .nav-links li a.active {
-            background: #1a1a1a;
-            color: #f7f3ee;
-        }
-
-        /* 햄버거 메뉴 (모바일) */
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            gap: 0.3rem;
-            cursor: pointer;
-            padding: 0.4rem;
-            border: 2px solid #1a1a1a;
-            background: #f7f3ee;
-        }
-
-        .hamburger-menu span {
-            width: 24px;
-            height: 3px;
-            background: #1a1a1a;
-            display: block;
-        }
-
-        /* 반응형 768px */
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: flex;
-            }
-
-            .nav-links {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                margin-top: 1rem;
-                border-top: 2px solid #1a1a1a;
-                padding-top: 1rem;
-            }
-
-            .nav-links.open {
-                display: flex;
-            }
-
-            .nav-links li a {
-                text-align: center;
-                border-width: 2px;
-            }
-        }
-
-        /* 히어로 섹션 */
-        .hero {
-            border: 4px solid #1a1a1a;
-            padding: 2rem 2rem 2.5rem;
-            margin-bottom: 2rem;
-            background: #f7f3ee;
-            background-image: repeating-linear-gradient(45deg, rgba(0,0,0,0.02) 0px, rgba(0,0,0,0.02) 10px, transparent 10px, transparent 20px);
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-            line-height: 1.1;
-            margin-bottom: 1rem;
-            border-left: 10px solid #1a1a1a;
-            padding-left: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            font-weight: 400;
-            background: rgba(255,255,255,0.6);
-            padding: 0.5rem 1rem;
-            border: 1px solid #1a1a1a;
-            display: inline-block;
-        }
-
-        /* 카드 */
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-
-        .card {
-            border: 3px solid #1a1a1a;
-            background: #f7f3ee;
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card h3 {
-            font-size: 1.5rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin-bottom: 0.75rem;
-            border-bottom: 3px solid #1a1a1a;
-            padding-bottom: 0.5rem;
-        }
-
-        .card p {
-            font-size: 0.95rem;
-            flex: 1;
-            margin-bottom: 0.5rem;
-        }
-
-        .card .price-tag {
-            font-weight: 900;
-            font-size: 1.3rem;
-            background: #1a1a1a;
-            color: #f7f3ee;
-            display: inline-block;
-            padding: 0.2rem 0.8rem;
-            margin: 0.5rem 0;
-            align-self: flex-start;
-        }
-
-        .card .badge {
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            border: 2px solid #1a1a1a;
-            padding: 0.2rem 0.6rem;
-            background: #fff;
-            margin-right: 0.3rem;
-        }
-
-        /* 데이터 테이블 */
-        .data-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            border: 3px solid #1a1a1a;
-            background: #f7f3ee;
-        }
-
-        .data-table th,
-        .data-table td {
-            border: 2px solid #1a1a1a;
-            padding: 0.75rem 1rem;
-            text-align: left;
-            font-size: 0.95rem;
-        }
-
-        .data-table th {
-            background: #1a1a1a;
-            color: #f7f3ee;
-            font-weight: 900;
-            text-transform: uppercase;
-        }
-
-        .data-table td {
-            background: #fff;
-        }
-
-        /* FAQ */
-        .faq-list {
-            margin: 2rem 0;
-            border-top: 4px solid #1a1a1a;
-            padding-top: 1rem;
-        }
-
-        .faq-item {
-            border: 2px solid #1a1a1a;
-            margin-bottom: 1rem;
-            background: #f7f3ee;
-        }
-
-        .faq-question {
-            font-weight: 900;
-            padding: 1rem 1.2rem;
-            cursor: default;
-            border-bottom: 2px solid #1a1a1a;
-            background: #e8e4de;
-            text-transform: uppercase;
-            font-size: 1rem;
-        }
-
-        .faq-answer {
-            padding: 1rem 1.2rem;
-            background: #fff;
-            border-top: 1px solid #1a1a1a;
-        }
-
-        /* 사이드바 / 인포 박스 */
-        .info-box {
-            border: 4px solid #1a1a1a;
-            padding: 1.5rem;
-            background: #1a1a1a;
-            color: #f7f3ee;
-            margin: 2rem 0;
-        }
-
-        .info-box h2 {
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            border-bottom: 3px solid #f7f3ee;
-            padding-bottom: 0.3rem;
-            margin-bottom: 1rem;
-        }
-
-        .info-box p,
-        .info-box a {
-            color: #f7f3ee;
-            font-weight: 700;
-        }
-
-        .info-box a {
-            text-decoration: underline;
-        }
-
-        /* 푸터 */
-        .site-footer {
-            border-top: 4px solid #1a1a1a;
-            padding: 1.5rem 0;
-            margin-top: 3rem;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .site-footer p {
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>망원 셔츠룸 정보 — 상세 가이드</title>
+  <meta name="description" content="망원동 셔츠룸을 이용하려는 사람들을 위해 운영 시간, 인원별 흐름, 예약 팁 등 핵심 정보를 정리했습니다.">
+  <meta name="keywords" content="망원 셔츠룸, 망원 셔츠룸 정보, 망원 셔츠룸 이용 방법, 망원 동네 셔츠룸 안내">
+  <link rel="canonical" href="https://mangwon-review-note.link-hub.org/about.html">
+  <meta property="og:title" content="망원 셔츠룸 정보 — 상세 가이드">
+  <meta property="og:description" content="망원동 셔츠룸을 이용하려는 사람들을 위해 운영 시간, 인원별 흐름, 예약 팁 등 핵심 정보를 정리했습니다.">
+  <meta property="og:url" content="https://mangwon-review-note.link-hub.org/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630">
+  <style>
+    :root{
+      --primary:#2c3e50;
+      --accent:#e74c3c;
+      --bg:#ecf0f1;
+      --text:#34495e;
+      --radius:8px;
+    }
+    body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;padding:0;}
+    .x-wrap-lnes{max-width:1200px;margin:auto;padding:20px;}
+    header{background:var(--primary);color:#fff;padding:20px 0;}
+    nav ul{list-style:none;display:flex;gap:15px;justify-content:center;margin:0;padding:0;}
+    nav li a{color:#fff;text-decoration:none;font-weight:500;}
+    main{padding:40px 0;}
+    section{padding:30px 0;border-bottom:1px solid #ddd;}
+    section:nth-child(even){background:var(--bg);}
+    h1,h2{color:var(--primary);margin:0 0 15px;}
+    h1{font-size:2.2rem;}
+    h2{font-size:1.8rem;}
+    p{line-height:1.6;margin:0 0 1em;}
+    button{background:var(--accent);color:#fff;border:none;padding:10px 20px;border-radius:var(--radius);cursor:pointer;}
+    button:hover{background:#c0392b;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .card{background:#fff;padding:20px;border-radius:var(--radius);box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+    @media(max-width:768px){
+      nav ul{flex-direction:column;align-items:center;}
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- 헤더 & 네비게이션 (전체 공통) -->
-        <header class="site-header">
-            <div class="site-title">
-                <a href="/">망원 셔츠룸 추천</a>
-            </div>
-            <nav>
-                <div class="hamburger-menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-                    <span></span><span></span><span></span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/info" class="active">정보</a></li>
-                    <li><a href="/price">가격</a></li>
-                    <li><a href="/review">후기</a></li>
-                    <li><a href="/contact">문의</a></li>
-                </ul>
-            </nav>
-        </header>
+  <header class="x-wrap-lnes">
+    <h1>망원 셔츠룸 정보</h1>
+    <nav>
+      <ul>
+        <li><a href="/">홈</a></li>
+        <li><a href="/overview">전체보기</a></li>
+        <li><a href="/reviews">리뷰</a></li>
+        <li><a href="/info">정보</a></li>
+        <li><a href="/contact">연락처</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- 히어로 (정보 페이지) -->
-        <section class="hero">
-            <h1>망원 셔츠룸 상세 정보</h1>
-            <p>망원동 지역 셔츠룸의 객관적인 데이터, 가격 비교, 서비스 분석. 실제 방문 기반 추천 업소 리스트.</p>
-        </section>
+  <main class="x-wrap-lnes">
+    <section id="overview">
+      <h2>서비스 개요</h2>
+      <p>망원동에 위치한 셔츠룸은 개인 및 단체가 편리하게 옷을 보관하고 필요 시 언제든 꺼낼 수 있도록 설계되었습니다. 24시간 자동 잠금 시스템과 온도·습도 조절 기능을 갖추고 있어 옷감 손상이 최소화됩니다.</p>
+      <p>다양한 사이즈와 스타일을 손쉽게 관리할 수 있도록 각 구역마다 전용 라인이 존재합니다. 특히, 학생·직장인·가족 등 인원별 이용 흐름을 고려한 맞춤형 플랜이 제공돼 처음 방문하는 사람도 복잡함 없이 서비스를 이용할 수 있습니다.</p>
+    </section>
 
-        <!-- 지역 시그널 + 데이터 기반 소개 -->
-        <div style="margin: 1.5rem 0; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-            <span class="badge" style="background:#1a1a1a; color:#f7f3ee; border-color:#1a1a1a;">#망원셔츠룸</span>
-            <span class="badge" style="background:#1a1a1a; color:#f7f3ee; border-color:#1a1a1a;">#망원동</span>
-            <span class="badge" style="background:#1a1a1a; color:#f7f3ee; border-color:#1a1a1a;">#가격비교</span>
-            <span class="badge" style="background:#1a1a1a; color:#f7f3ee; border-color:#1a1a1a;">#프리미엄</span>
+    <section id="usage-flow">
+      <h2>인원별 이용 흐름</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1인 이용</h3>
+          <p>혼자 방문할 경우, 입구에서 QR 코드를 스캔해 셔틀박스를 선택합니다. 자동 안내 화면이 바로 사용 가능한 칸을 보여주며, 물품을 넣고 뺄 때는 간단한 터치 인증만 하면 됩니다.</p>
+          <p>시간대별 혼잡도에 따라 사전에 예약을 할 수 있어, 피크 타임에도 기다림 없이 바로 입장할 수 있습니다.</p>
         </div>
-
-        <!-- 카드 그리드 - 대표 업소 3곳 -->
-        <div class="card-grid">
-            <div class="card">
-                <h3>더블랙 망원</h3>
-                <p>망원동 메인 스트리트 위치, 20대 초반 아가씨 라인업. 2시간 기본 패키지 기준 13만원~16만원. 룸 컨디션 ★★★★☆</p>
-                <div class="price-tag">13만원~</div>
-                <div><span class="badge">프리미엄</span><span class="badge">신규</span></div>
-            </div>
-            <div class="card">
-                <h3>셔츠존 망원</h3>
-                <p>합리적인 가격대 (10~13만원) + 초이스 시스템. 망원동에서 가장 오래된 업소 중 하나로 단골층 두터움. 서비스 만족도 ★★★★☆</p>
-                <div class="price-tag">10만원~</div>
-                <div><span class="badge">가성비</span><span class="badge">단골</span></div>
-            </div>
-            <div class="card">
-                <h3>VIP 망원</h3>
-                <p>고급 인테리어, 20~30대 라인업, 2시간 18만원~22만원. 망원동 내에서 가장 높은 리뷰 평점 (4.7/5). 전용 주차 가능.</p>
-                <div class="price-tag">18만원~</div>
-                <div><span class="badge">VIP</span><span class="badge">주차</span></div>
-            </div>
+        <div class="card">
+          <h3>2~4인 이용</h3>
+          <p>소규모 그룹은 공동 라인을 공유하면서도 개별 라벨링이 가능하도록 설계되었습니다. 각 인원당 전용 라벨을 부착하고, 라인 바깥에 있는 공유 스터디룸을 이용해 옷을 확인하거나 교환할 수 있습니다.</p>
+          <p>여러 사람이 동시에 이용해도 시스템이 자동으로 충돌을 방지해 주므로, 일정 관리가 쉬워집니다.</p>
         </div>
+        <div class="card">
+          <h3>5인 이상 대규모 이용</h3>
+          <p>가족·동아리·기업 단체는 전용 전시 공간을 예약해 대량 보관이 가능합니다. 별도의 담당 매니저가 배정돼 물품 입·출고 시 현장 지원을 제공하며, 사전 상담을 통해 최적 라인 배치를 설계해 줍니다.</p>
+          <p>대규모 이용 시에는 사전 계약이 필요하지만, 맞춤형 보관 솔루션과 함께 월 이용료 할인 혜택을 받을 수 있습니다.</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- 데이터 테이블 (가격 비교) -->
-        <h2 style="font-size:1.8rem; font-weight:900; text-transform:uppercase; border-left:8px solid #1a1a1a; padding-left:0.8rem; margin:2rem 0 1rem;">망원 셔츠룸 가격 비교표</h2>
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>업소명</th>
-                    <th>기본 시간</th>
-                    <th>가격대</th>
-                    <th>초이스 비용</th>
-                    <th>주차</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>더블랙 망원</td>
-                    <td>2시간</td>
-                    <td>13~16만원</td>
-                    <td>5~7만원</td>
-                    <td>유료 (인근)</td>
-                </tr>
-                <tr>
-                    <td>셔츠존 망원</td>
-                    <td>2시간</td>
-                    <td>10~13
+    <section id="time-features">
+      <h2>시간대별 특징</h2>
+      <p>셔츠룸은 24시간 운영하지만, 이용자 흐름은 시간대에 따라 다소 차이가 있습니다. 새벽 2시~6시 사이에는 자동 보안 모드가 활성화돼 조용히 보관·회수할 수 있습니다. 이때는 인력 배치가 최소화돼 비용이 절감됩니다.</p>
+      <p>오전 9시~12시, 그리고 오후 5시~8시는 가장 많은 고객이 방문하는 피크 타임이며, 이때는 추가 안내 직원이 배치돼 문의와 입·출고를 신속히 도와줍니다. 또한, 피크 타임 전후로는 라인 교체가 원활히 이루어져 대기 시간을 최소화합니다.</p>
+      <p>주말 오후는 특히 가족 단위 이용이 늘어나며, 전용 놀이 공간이 제공돼 아이와 함께 편리하게 이용할 수 있습니다. 이때는 사전 예약이 강력히 권장됩니다.</p>
+    </section>
+
+    <section id="checklist">
+      <h2>이용 전 체크리스트</h2>
+      <p>1️⃣ <strong>예약 여부 확인</strong> – 피크 타임에 방문할 경우 사전 예약을 권장합니다. 웹 또는 모바일 앱에서 5분 안에 예약이 완료됩니다.</p>
+      <p>2️⃣ <strong>보관 물품 분류</strong> – 옷 종류와 사용 목적에 따라 라벨을 붙이고, 섬유 종류별 보관 온도를 확인합니다.</p>
+      <p>3️⃣ <strong>신분 확인</strong> – 입구에서는 신분증과 QR 코드가 필요합니다. QR 코드는 24시간 유효합니다.</p>
+      <p>4️⃣ <strong>시간대 선택</strong> – 혼잡도를 고려해 이용 시간대를 미리 정하고, 필요 시 알림 서비스를 설정합니다.</p>
+      <p>5️⃣ <strong>비상 연락처 등록</strong> – 비상 상황 시 연락 가능한 번호를 입력해 두면, 직원이 즉시 대응합니다.</p>
+    </section>
+
+    <section id="faq">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Q1. 셔츠룸 이용 시간은 언제까지 가능한가요?</h3>
+          <p>24시간 자동 잠금 시스템이 적용돼 언제든 입·출고가 가능합니다. 다만, 피크 타임 외에는 별도 직원이 없으니 자체 인증을 이용해 주세요.</p>
+        </div>
+        <div class="card">
+          <h3>Q2. 보관 물품에 손상이 갈 경우 어떻게 해야 하나요?</h3>
+          <p>온·습도 조절이 자동으로 이루어지며, 전용 센서가 이상 징후를 감지하면 바로 알림을 보냅니다. 보관 전후 사진을 촬영해 기록해 두면 보상 절차가 빠릅니다.</p>
+        </div>
+        <div class="card">
+          <h3>Q3. 대규모 팀이 동시에 이용할 경우 할인 혜택이 있나요?</h3>
+          <p>5인 이상 단체 계약 시 월 이용료 10% 할인과 전용 매니저 배정 서비스를 제공합니다. 계약 전 상담을 통해 최적 플랜을 설계합니다.</p>
+        </div>
+        <div class="card">
+          <h3>Q4. 예약 취소는 어떻게 하나요?</h3>
+          <p>예약 2시간 전까지는 모바일 앱에서 무료로 취소할 수 있습니다. 2시간 이내 취소 시 1회에 한해 소정의 취소 수수료가 부과됩니다.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="x-wrap-lnes" style="text-align:center;padding:20px 0;color:var(--primary);font-size:0.9rem;">
+    © 2026 망원 셔츠룸. 모든 권리 보유.
+  </footer>
 </body>
 </html>
